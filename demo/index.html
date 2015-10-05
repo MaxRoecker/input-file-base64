@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>input-file-base64 Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../input-file-base64.html">
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;input-file-base64&gt;</code>:</p>
+    <input-file-base64></input-file-base64>
+    <p>
+      Result
+    </p>
+    <ul>
+      <li>
+        <strong>Name:</strong><br/>
+        <code id="file-name"></code>
+      </li>
+      <li>
+        <strong>Size:</strong><br/>
+        <code id="file-size"></code>
+      </li>
+      <li>
+        <strong>Type:</strong><br/>
+        <code id="file-type"></code>
+      </li>
+      <li>
+        <strong>Payload (Base64 encoding):</strong><br/>
+        <code id="file-payload"></code>
+      </li>
+    </ul>
+
+    <script>
+      var seedElement = document.querySelector('input-file-base64');
+
+      seedElement.addEventListener('value-changed',function(){
+        var nameNode = document.querySelector('#file-name');
+        var sizeNode = document.querySelector('#file-size');
+        var typeNode = document.querySelector('#file-type');
+        var payloadNode = document.querySelector('#file-payload');
+        nameNode.innerHTML = seedElement.value;
+        sizeNode.innerHTML = seedElement.size;
+        typeNode.innerHTML = seedElement.mimeType;
+        payloadNode.innerHTML = seedElement.payload;
+      });
+
+    </script>
+
+  </body>
+</html>

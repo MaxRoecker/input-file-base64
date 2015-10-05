@@ -1,0 +1,26 @@
+{
+  "name": "input-file-base64",
+  "version": "1.0.3",
+  "authors": [
+    "Max <max.roecker@gmail.com>"
+  ],
+  "description": "An element for input file that parses to Base64 encoding",
+  "keywords": [
+    "web-component",
+    "polymer"
+  ],
+  "main": "input-file-base64.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  }
+}
