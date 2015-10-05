@@ -11,7 +11,7 @@
   ],
   "main": "input-file-base64.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/MaxRoecker/input-file-base64",
   "ignore": [
     "/.*",
     "/test/"
